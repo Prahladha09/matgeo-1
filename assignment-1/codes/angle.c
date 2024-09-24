@@ -2,7 +2,9 @@
 #include <math.h>
 
 int main() {
+    // Rain falling vertically
     double rain_speed = 35.0; // m/s
+    // Wind blowing horizontally (east to west)
     double wind_speed = 12.0; // m/s
 
     // Calculate angle (in degrees)
@@ -14,9 +16,8 @@ int main() {
         printf("Error opening file!\n");
         return 1;
     }
-    fprintf(file, "Angle to hold the umbrella: %.2f degrees\n", angle);
+    fprintf(file, "%.2f\n", angle);
     fclose(file);
 
     return 0;
 }
-
