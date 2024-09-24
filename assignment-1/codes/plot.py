@@ -23,7 +23,7 @@ plt.quiver(0, 0, umbrella_vector[0], umbrella_vector[1], angles='xy', scale_unit
 # Annotations
 plt.text(0.5, -10, f'Rain: {rain_speed} m/s', color='blue', fontsize=10)
 plt.text(-10, -2, f'Wind: {wind_speed} m/s', color='green', fontsize=10)
-plt.text(5, -15, f'angle made by resultant vector \nwith west direction: {angle:.2f}°', color='red', fontsize=10)
+plt.text(5, -15, f'angle made by resultant vector \nwith west direction: {90-angle:.2f}°', color='red', fontsize=10)
 
 # Set limits and labels
 plt.xlim(-20, 10)
