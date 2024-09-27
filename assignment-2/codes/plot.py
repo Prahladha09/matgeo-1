@@ -21,10 +21,8 @@ ax.plot(x, y, z, color='blue')
 
 # Label the points A, B, C with their coordinates
 labels = ['A', 'B', 'C']
-for i in range(len(labels)):
-    ax.text(x[i], y[i], z[i], f"{labels[i]} ({x[i]:.1f}, {y[i]:.1f}, {z[i]:.1f})", 
-            size=12, color='black')
-
+points = list(map(lambda i: ax.text(x[i], y[i], z[i], f"{labels[i]} ({x[i]:.1f}, {y[i]:.1f}, {z[i]:.1f})", size=12, color='black'), range(len(labels))))
+            
 # Label the axes
 ax.set_xlabel('X Axis')
 ax.set_ylabel('Y Axis')
